@@ -16,34 +16,46 @@ int getColorIndex(char c);
 int getFormIndex(char f);
 string convertColor(char c);
 
+void displayHomeScreen() {
+    system("cls"); 
+    
+    cout << "\033[1;32m"; 
+    cout << "******************************" << endl;
+    cout << "*      Welcome to Teriste    *" << endl;
+    cout << "*    Press any key to start  *" << endl;
+    cout << "*        Press 'q' to quit   *" << endl;
+    cout << "******************************" << endl;
+    cout << "\033[0m"; 
+}
+
 int main() {
     srand(time(nullptr));
     LstPiece L;
     jeu j;
-
+    
+    displayHomeScreen();
+    
+    _getch();
+    
     while (true) {
-        Piece *p = j.generatePiece();
-        cout << "Piece suivante : " << convertColor(p->couleur) << p->forme << " "
-             << "\033[0m" << endl;
-        char c;
-
-        cout << "Tapez 'd | D' ou 'g | G' pour inserer" << endl;
-        cout << "score :" << score << endl;
-        c = _getch();
-        if (c == 'q') {
-            cout << "Game Over" << endl;
+        
+        
+        
+        Piece* p = j.generatePiece();
+        
+        cout << "Next Piece: " << convertColor(p->couleur) << p->forme << "\033[0m" << endl;
+        
+        cout << "Press 'd' to insert on the right or 'g' to insert on the left." << endl;
+        char choice = _getch();
+        if(choice == 'q' || choice == 'Q'){
             break;
-        } else if (c == 's' || c == 'S') {
-            cout << "forme f ou color c : ";
-            char k;
-            cin >> k;
-            L.decalage(k);
-        } else {
-            L.insert(p, c);
-            system("cls");
-            L.Afficher();
+            exit(0);
         }
+        L.insert(p, choice);
+        
+        system("cls");
+        L.Afficher();
     }
-
+    
     return 0;
 }
