@@ -29,6 +29,7 @@ Une fois que le jeu a été compilé avec succès, vous pouvez l'exécuter en su
 - Pour insérer une pièce à gauche : Appuyez sur `g` ou `G`.
 - Pour insérer une pièce à droite : Appuyez sur `d` ou `D`.
 - Pour arrêter le jeu : Appuyez sur `q` ou `Q`.
+- Pour initier un décalage de pièces : Appuyez sur `s`.
 
 ## Nettoyage
 
