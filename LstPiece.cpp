@@ -144,10 +144,10 @@ void LstPiece::decalage(char choice) {
 
     char specificChoice;
     if (choice == 'c') {
-        cout << "Enter color ('v' for green, 'b' for blue, 'r' for red, 'j' for yellow): ";
+        cout << "Enter color ('v' pour vert, 'b'pour bleu, 'r' pour rouge, 'j' pour jaune): ";
         cin >> specificChoice;
         if (specificChoice != 'v' && specificChoice != 'b' && specificChoice != 'r' && specificChoice != 'j') {
-            cout << "Invalid color. Please choose 'v', 'b', 'r', or 'j'." << endl;
+            cout << " coleur Invalide. choisir 'v', 'b', 'r', ou 'j'." << endl;
             return;
         }
 
@@ -156,10 +156,10 @@ void LstPiece::decalage(char choice) {
         cin >> dir;
 
     } else if (choice == 'f') {
-        cout << "Enter shape ('c' for circle, 'r' for rectangle, 't' for triangle, 'l' for line): ";
+        cout << "Enter la forme ('c' pour carre, 'r' pour rond, 't' pour triangle, 'l' pour losange): ";
         cin >> specificChoice;
         if (specificChoice != 'c' && specificChoice != 'r' && specificChoice != 't' && specificChoice != 'l') {
-            cout << "Invalid shape. Please choose 'c', 'r', 't', or 'l'." << endl;
+            cout << "Forme Invalide . choisir 'c', 'r', 't', or 'l'." << endl;
             return;
         }
     }
