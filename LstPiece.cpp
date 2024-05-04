@@ -136,6 +136,7 @@ void LstPiece::swap(Piece* P1, Piece* P2) {
     P2->suiv = P1;
 }
 
+
 void LstPiece::decalage(char choice) {
     if (choice != 'c' && choice != 'f') {
         cout << "Invalid choice. Please choose 'c' for color or 'f' for form." << endl;
