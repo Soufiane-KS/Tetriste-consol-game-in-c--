@@ -33,7 +33,7 @@ Une fois que le jeu a été compilé avec succès, vous pouvez l'exécuter en su
 
 ## Nettoyage
 
-Si vous souhaitez nettoyer les fichiers objets et l'exécutable générés, vous pouvez exécuter la commande `make clean`.
+Si vous souhaitez nettoyer les fichiers objets et l'exécutable générés, vous pouvez exécuter la commande `make clean` ou `mingw32-make clean`.
 
 
 Cela supprimera tous les fichiers objets et l'exécutable.
