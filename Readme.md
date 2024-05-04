@@ -11,7 +11,7 @@ Pour compiler le jeu, vous aurez besoin d'un compilateur C++ compatible avec le 
 3. Accédez au répertoire contenant les fichiers source du jeu.
 
 
-4. Exécutez la commande `make` pour compiler le jeu.
+4. Exécutez la commande `make` ou `mingw32-make` pour compiler le jeu.
 
 
 Cela créera un exécutable nommé `teriste`.
